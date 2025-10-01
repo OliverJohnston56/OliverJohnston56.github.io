@@ -1,36 +1,19 @@
-.about {
+/* base font for the sections */
+.about, .skills, .projects, .contact {
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #1468df;   /* dark slate */
   font-size: 16px;
   line-height: 1.5;
 }
-.skills {
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #07f13a;   /* dark slate */
-  font-size: 16px;
-  line-height: 1.5;
-}
-.projects {
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #f10707;   /* dark slate */
-  font-size: 16px;
-  line-height: 1.5;
-}
-.contact {
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #3a07f1;   /* dark slate */
-  font-size: 16px;
-  line-height: 1.5;
-}
-.projects h2 {
-  color: #f10707;
-}
-.contact h2 {
-  color: #3a07f1;
-}
-.skills h2 {
-  color: #07f13a;
-}
-.about p {
-  color: #1468df;
-}
+
+/* explicit heading colors to avoid inheritance issues */
+.about h2,
+.about p { color: #1468df; }
+
+.skills h2,
+.skills { color: #07f13a; }
+
+.projects h2,
+.projects { color: #f10707; }
+
+.contact h2,
+.contact { color: #3a07f1; }
