@@ -4,3 +4,9 @@
   font-size: 16px;
   line-height: 1.5;
 }
+.skills {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #07f13a;   /* dark slate */
+  font-size: 16px;
+  line-height: 1.5;
+}
