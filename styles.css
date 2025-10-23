@@ -17,3 +17,12 @@
 
 .contact h2,
 .contact { color: #3a07f1; }
+
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.project {
+width: 30%;
+margin: 10px;
+padding: 20px 10px;
+background: red; /* pick a color */
+border-radius: 25%;
+}
