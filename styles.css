@@ -5,25 +5,38 @@
   line-height: 1.5;
 }
 
-/* explicit heading colors to avoid inheritance issues */
-.about h2,
-.about p { color: #1468df; }
+/* explicit heading colors — only affect the headings */
+.about h2 { color: #1468df; }
+.skills h2 { color: #07f13a; }
+.projects h2 { color: #f10707; }      /* <- changed to target only the h2 */
+.contact h2 { color: #3a07f1; }
 
-.skills h2,
-.skills { color: #07f13a; }
-
-.projects h2,
-.projects { color: #f10707; }
-
-.contact h2,
-.contact { color: #3a07f1; }
-
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: rgb(68, 0, 255); /* pick a color */
-border-radius: 25%;
+/* projects layout */
+.projects { 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;               /* nicer spacing between cards */
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
+/* project card */
+.project {
+  width: calc(33.333% - 20px); /* 3 columns with gap; use calc to avoid overflow */
+  min-width: 240px;            /* prevents cards from becoming too small on mobile */
+  margin: 0;
+  padding: 20px;
+  background: #f8f8fb;         /* subtle neutral background instead of vivid color */
+  border-radius: 12px;         /* px looks better than % for consistent rounding */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+/* make images scale nicely inside card */
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
+}
